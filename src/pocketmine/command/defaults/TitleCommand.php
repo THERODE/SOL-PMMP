@@ -66,7 +66,7 @@ class TitleCommand extends VanillaCommand{
 					return false;
 				}
 
-				$player->addTitle(implode(" ", array_slice($args, 2)));
+				$player->sendTitle(implode(" ", array_slice($args, 2)));
 				break;
 			case "subtitle":
 				if(count($args) < 3){
